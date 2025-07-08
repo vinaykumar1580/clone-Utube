@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 200px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* VIDEO SECTION */
+.video-section {
+  margin-left: 200px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.video-card {
+  background: #fff;
+}
+
+.thumbnail {
+  width: 416px;
+  height:234px;
+  border-radius: 8px;
+}
+
+.video-info {
+  display: flex;
+  margin-top: 8px;
+}
+
+.channel-icon {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo{
+    width: 120px;
+    height: 55px;
+    padding-left: 20px;
+}
+
+.profile-icon{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+}
+
+.left-nav, .center-nav, .right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav {
+  height: 30px;
+  margin-left: 10px;
+}
+
+input{
+    width: 500px;
+    border-radius: 20px;
+    height: 30px;
+    padding: 7px;
+}
+
+.right-nav i {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-bar{
+  position: relative;
+  width: 400px;
+  align-content: center;
+}
+
+
+.search-input {
+  width: 100%;
+  padding: 8px 40px 8px 12px; /* space for icon on right */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  align-content: center;
+  left: 470px;
+  top: 50%;
+  height:80px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+  pointer-events: none; /* So user can click through to input */
+}
+
+.search-icon{
+    height: 25px;   
+    border-left: 1px solid grey;
+}
+.plus-icon{
+  border: 1px solid grey;
+  padding: 2px 9px 2px 0px;
+  display: flex;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.microphone:hover{
+  border: 1px solid grey;
+  border-radius: 80%;
+  background-color:darkgray;
+}
+
+.sidebar ul li:hover{
+   border: 1px solid gray;
+   border-radius: 10px;
+   background-color: darkgray;
+
+}
+
+.line{
+  border-top:1px solid #ddd;
+}
