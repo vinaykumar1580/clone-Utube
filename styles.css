@@ -22,7 +22,7 @@
 
 /* SIDEBAR */
 .sidebar {
-  width: 200px;
+  width: 220px;
   position: fixed;
   top: 60px;
   left: 0;
@@ -30,6 +30,8 @@
   background: #fff;
   border-right: 1px solid #ddd;
   padding-top: 20px;
+  overflow: scroll;
+
 }
 
 .sidebar ul {
@@ -69,7 +71,8 @@
 
 .channel-icon {
   width: 40px;
-  border-radius: 50%;
+  border-radius: 70%;
+  height:35px;
   margin-right: 10px;
 }
 
@@ -163,4 +166,42 @@ input{
 
 .line{
   border-top:1px solid #ddd;
+}
+.footer-aside{
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: smaller;
+  cursor: pointer;
+  color: #656565;
+}
+.side-head{
+  padding: 15px;
+  font-weight: bolder;
+}
+.item{
+  display: flex;
+  align-items:center;
+  gap:10px;
+}
+
+.short-thumbnail{
+  width:234px;
+  height:351px;
+  left:0px;
+  top:-234px;
+}
+.short-section{
+  margin-left: 200px;
+  margin-top: 50px;
+  display: grid;
+  padding-right: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding-left: 25px;
+
+}
+
+.short-thumbnail{
+  border-radius: 10px;
+  gap: 5px;
+  cursor: pointer;
 }
